@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="NextLevelCourses to strona która jest przeznaczona do nauki języka JavaScript mamy dużą baze zadań i cały czas ją powiększamy" />
+    <meta name="Keywords" content="JavaScript" /> 
+    <title>NextLevelCourses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="headerTitle">Welcome to the Programming Course!</h1>
+        <p id="headerDesc">Choose a course and start learning programming with interactive tasks!</p>
+        <div>
+            <label for="languageSelect">Change Language:</label>
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="pl">Polski</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <select id="courseSelect" onchange="showCourseDetails()">
+            <option value="">Select a course</option>
+            <option value="kurs1">Course 1: Introduction to JavaScript</option>
+            <option value="kurs2">Course 2: Functions in JavaScript</option>
+            <option value="kurs3">Course 3: Advanced JavaScript</option>
+            <option value="kurs4">Course 4: HTML Basics</option>
+            <option value="kurs5">Course 5: CSS Styling</option>
+            <option value="kurs6">Course 6: JavaScript Arrays</option>
+            <option value="kurs7">Course 7: JavaScript Loops</option>
+            <option value="kurs8">Course 8: DOM Manipulation</option>
+            <option value="kurs9">Course 9: Asynchronous JavaScript</option>
+            <option value="kurs10">Course 10: ES6 Features</option>
+            <option value="kurs11">Course 11: React Basics</option>
+            <option value="kurs12">Course 12: Node.js Introduction</option>
+            <option value="kurs13">Course 13: Express.js Framework</option>
+            <option value="kurs14">Course 14: MongoDB Basics</option>
+            <option value="kurs15">Course 15: Git and GitHub</option>
+            <option value="kurs16">Course 16: Web APIs</option>
+        </select>
+    </header>
+    
+    <main>
+        <!-- Course sections with written materials -->
+        <section id="kurs1" class="course-section">
+            <h2>Course 1: Introduction to JavaScript</h2>
+            <p id="course1Desc">Learn the basics of JavaScript, including variables, data types, and syntax. This course will give you the foundation you need to start programming with JavaScript.</p>
+            <a href="kurs1_material.pdf" download>Download written material for this course</a>
+            <button id="startKurs1" onclick="startCourse('kurs1')">Start Course</button>
+            <div id="kurs1Zadanie" class="task-section" style="display:none;">
+                <h3>Task 1: Define a Variable</h3>
+                <p>Write a script that creates a variable named "greeting" and assigns the value "Hello, World!".</p>
+                <textarea id="task1Input" placeholder="Write your code here"></textarea>
+                <button onclick="checkTask1()">Check Task</button>
+                <div id="task1Result"></div>
+            </div>
+        </section>
+
+        <section id="kurs2" class="course-section">
+            <h2>Course 2: Functions in JavaScript</h2>
+            <p id="course2Desc">This course focuses on functions, a fundamental concept in programming. You will learn how to declare functions, pass parameters, and return values.</p>
+            <a href="kurs2_material.pdf" download>Download written material for this course</a>
+            <button id="startKurs2" onclick="startCourse('kurs2')">Start Course</button>
+            <div id="kurs2Zadanie" class="task-section" style="display:none;">
+                <h3>Task 2: Addition Function</h3>
+                <p>Write a function that takes two arguments and returns their sum.</p>
+                <textarea id="task2Input" placeholder="Write your code here"></textarea>
+                <button onclick="checkTask2()">Check Task</button>
+                <div id="task2Result"></div>
+            </div>
+        </section>
+
+        <!-- Add more courses in the same format -->
+
+        <!-- Continue adding for courses 3-16 -->
+        <section id="kurs3" class="course-section">
+            <h2>Course 3: Advanced JavaScript</h2>
+            <p id="course3Desc">In this course, we will dive deeper into JavaScript, covering concepts like closures, callbacks, and scope.</p>
+            <a href="kurs3_material.pdf" download>Download written material for this course</a>
+            <button id="startKurs3" onclick="startCourse('kurs3')">Start Course</button>
+            <div id="kurs3Zadanie" class="task-section" style="display:none;">
+                <h3>Task 3: Create a Closure</h3>
+                <p>Write a function that creates a closure and demonstrates its use.</p>
+                <textarea id="task3Input" placeholder="Write your code here"></textarea>
+                <button onclick="checkTask3()">Check Task</button>
+                <div id="task3Result"></div>
+            </div>
+        </section>
+
+        <!-- Add courses 4 to 16 in a similar way -->
+
+        <!-- Course 4 -->
+<section id="kurs4" class="course-section">
+    <h2>Course 4: HTML Basics</h2>
+    <p id="course4Desc">Learn the basic structure of an HTML document and how to create web pages using HTML tags. You will create your first web page in this course.</p>
+    <a href="kurs4_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs4" onclick="startCourse('kurs4')">Start Course</button>
+    <div id="kurs4Zadanie" class="task-section" style="display:none;">
+        <h3>Task 4: Create a Simple Web Page</h3>
+        <p>Write an HTML document that displays a heading "My First Web Page" and a paragraph below it.</p>
+        <textarea id="task4Input" placeholder="Write your HTML code here"></textarea>
+        <button onclick="checkTask4()">Check Task</button>
+        <div id="task4Result"></div>
+    </div>
+</section>
+
+<!-- Course 5 -->
+<section id="kurs5" class="course-section">
+    <h2>Course 5: CSS Styling</h2>
+    <p id="course5Desc">This course introduces CSS (Cascading Style Sheets). You will learn how to style your HTML elements, change colors, and layout.</p>
+    <a href="kurs5_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs5" onclick="startCourse('kurs5')">Start Course</button>
+    <div id="kurs5Zadanie" class="task-section" style="display:none;">
+        <h3>Task 5: Style Your Web Page</h3>
+        <p>Using CSS, change the background color of your web page to light blue and make the heading text color green.</p>
+        <textarea id="task5Input" placeholder="Write your CSS code here"></textarea>
+        <button onclick="checkTask5()">Check Task</button>
+        <div id="task5Result"></div>
+    </div>
+</section>
+
+<!-- Continue adding for courses 6-16 in the same format -->
+
+<!-- Course 6 -->
+<section id="kurs6" class="course-section">
+    <h2>Course 6: JavaScript Arrays</h2>
+    <p id="course6Desc">Learn how to work with arrays in JavaScript. You will learn how to create arrays, access their elements, and perform basic array operations.</p>
+    <a href="kurs6_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs6" onclick="startCourse('kurs6')">Start Course</button>
+    <div id="kurs6Zadanie" class="task-section" style="display:none;">
+        <h3>Task 6: Create and Access Array Elements</h3>
+        <p>Create an array of numbers and access the first and last elements.</p>
+        <textarea id="task6Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask6()">Check Task</button>
+        <div id="task6Result"></div>
+    </div>
+</section>
+
+<!-- Repeat for courses 7-16 -->
+
+<!-- Course 7 -->
+<section id="kurs7" class="course-section">
+    <h2>Course 7: JavaScript Loops</h2>
+    <p id="course7Desc">This course focuses on loops in JavaScript. Learn how to use for, while, and do-while loops to repeat actions in your code.</p>
+    <a href="kurs7_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs7" onclick="startCourse('kurs7')">Start Course</button>
+    <div id="kurs7Zadanie" class="task-section" style="display:none;">
+        <h3>Task 7: Write a Loop</h3>
+        <p>Write a for loop that prints numbers 1 to 5 in the console.</p>
+        <textarea id="task7Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask7()">Check Task</button>
+        <div id="task7Result"></div>
+    </div>
+</section>
+
+<section id="kurs8" class="course-section">
+    <h2>Course 8: DOM Manipulation</h2>
+    <p id="course8Desc">Learn how to interact with the Document Object Model (DOM) in JavaScript. You will learn how to select elements, modify their content, and respond to events.</p>
+    <a href="kurs8_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs8" onclick="startCourse('kurs8')">Start Course</button>
+    <div id="kurs8Zadanie" class="task-section" style="display:none;">
+        <h3>Task 8: Change the Heading</h3>
+        <p>Write JavaScript code that changes the text of the first <code>&lt;h1&gt;</code> tag on the page to "DOM Manipulation Example".</p>
+        <textarea id="task8Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask8()">Check Task</button>
+        <div id="task8Result"></div>
+    </div>
+</section>
+
+<section id="kurs9" class="course-section">
+    <h2>Course 9: Asynchronous JavaScript</h2>
+    <p id="course9Desc">Learn the concepts of asynchronous programming in JavaScript. We will explore callbacks, promises, and async/await to handle asynchronous operations.</p>
+    <a href="kurs9_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs9" onclick="startCourse('kurs9')">Start Course</button>
+    <div id="kurs9Zadanie" class="task-section" style="display:none;">
+        <h3>Task 9: Promise Handling</h3>
+        <p>Create a Promise that resolves after 2 seconds and logs "Task Complete!" in the console.</p>
+        <textarea id="task9Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask9()">Check Task</button>
+        <div id="task9Result"></div>
+    </div>
+</section>
+
+<section id="kurs10" class="course-section">
+    <h2>Course 10: ES6 Features</h2>
+    <p id="course10Desc">Explore new features introduced in ES6 such as let, const, arrow functions, template literals, destructuring, and more.</p>
+    <a href="kurs10_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs10" onclick="startCourse('kurs10')">Start Course</button>
+    <div id="kurs10Zadanie" class="task-section" style="display:none;">
+        <h3>Task 10: Arrow Function</h3>
+        <p>Create an arrow function that takes two numbers as arguments and returns their sum.</p>
+        <textarea id="task10Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask10()">Check Task</button>
+        <div id="task10Result"></div>
+    </div>
+</section>
+
+<section id="kurs11" class="course-section">
+    <h2>Course 11: React Basics</h2>
+    <p id="course11Desc">Learn the fundamentals of React, a powerful JavaScript library for building user interfaces. You will learn about components, JSX, and state.</p>
+    <a href="kurs11_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs11" onclick="startCourse('kurs11')">Start Course</button>
+    <div id="kurs11Zadanie" class="task-section" style="display:none;">
+        <h3>Task 11: Create a React Component</h3>
+        <p>Write a simple React component that renders "Hello, React!" on the page.</p>
+        <textarea id="task11Input" placeholder="Write your JSX code here"></textarea>
+        <button onclick="checkTask11()">Check Task</button>
+        <div id="task11Result"></div>
+    </div>
+</section>
+
+<section id="kurs12" class="course-section">
+    <h2>Course 12: Node.js Introduction</h2>
+    <p id="course12Desc">In this course, you will learn the basics of Node.js, a JavaScript runtime built on Chrome's V8 JavaScript engine. You will set up a basic server.</p>
+    <a href="kurs12_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs12" onclick="startCourse('kurs12')">Start Course</button>
+    <div id="kurs12Zadanie" class="task-section" style="display:none;">
+        <h3>Task 12: Create a Basic Server</h3>
+        <p>Set up a basic Node.js server that listens on port 3000 and responds with "Hello, World!" when accessed.</p>
+        <textarea id="task12Input" placeholder="Write your Node.js code here"></textarea>
+        <button onclick="checkTask12()">Check Task</button>
+        <div id="task12Result"></div>
+    </div>
+</section>
+
+<section id="kurs13" class="course-section">
+    <h2>Course 13: Express.js Framework</h2>
+    <p id="course13Desc">Express.js is a web application framework for Node.js. In this course, you will learn how to create APIs and build server-side applications with Express.js.</p>
+    <a href="kurs13_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs13" onclick="startCourse('kurs13')">Start Course</button>
+    <div id="kurs13Zadanie" class="task-section" style="display:none;">
+        <h3>Task 13: Create a Simple Express Server</h3>
+        <p>Set up a basic Express.js server that responds with "Welcome to Express!" when accessed at the root path.</p>
+        <textarea id="task13Input" placeholder="Write your Express.js code here"></textarea>
+        <button onclick="checkTask13()">Check Task</button>
+        <div id="task13Result"></div>
+    </div>
+</section>
+
+<section id="kurs14" class="course-section">
+    <h2>Course 14: MongoDB Basics</h2>
+    <p id="course14Desc">Learn how to use MongoDB, a NoSQL database. You will learn how to connect to MongoDB, create collections, and perform CRUD operations.</p>
+    <a href="kurs14_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs14" onclick="startCourse('kurs14')">Start Course</button>
+    <div id="kurs14Zadanie" class="task-section" style="display:none;">
+        <h3>Task 14: Create a Database and Collection</h3>
+        <p>Write MongoDB code to create a database named "testDB" and a collection named "users". Insert a document into the "users" collection.</p>
+        <textarea id="task14Input" placeholder="Write your MongoDB code here"></textarea>
+        <button onclick="checkTask14()">Check Task</button>
+        <div id="task14Result"></div>
+    </div>
+</section>
+
+<section id="kurs15" class="course-section">
+    <h2>Course 15: Git and GitHub</h2>
+    <p id="course15Desc">In this course, you will learn the basics of Git and GitHub, including how to version control your projects and collaborate using Git repositories.</p>
+    <a href="kurs15_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs15" onclick="startCourse('kurs15')">Start Course</button>
+    <div id="kurs15Zadanie" class="task-section" style="display:none;">
+        <h3>Task 15: Initialize a Git Repository</h3>
+        <p>Initialize a new Git repository in a project folder and commit your first file.</p>
+        <textarea id="task15Input" placeholder="Write your Git commands here"></textarea>
+        <button onclick="checkTask15()">Check Task</button>
+        <div id="task15Result"></div>
+    </div>
+</section>
+
+<section id="kurs16" class="course-section">
+    <h2>Course 16: Web APIs</h2>
+    <p id="course16Desc">In this course, you will learn how to interact with various Web APIs using JavaScript, such as fetching data from external sources.</p>
+    <a href="kurs16_material.pdf" download>Download written material for this course</a>
+    <button id="startKurs16" onclick="startCourse('kurs16')">Start Course</button>
+    <div id="kurs16Zadanie" class="task-section" style="display:none;">
+        <h3>Task 16: Fetch Data from an API</h3>
+        <p>Write a JavaScript function that fetches data from an API (e.g., https://jsonplaceholder.typicode.com/posts) and logs the results to the console.</p>
+        <textarea id="task16Input" placeholder="Write your JavaScript code here"></textarea>
+        <button onclick="checkTask16()">Check Task</button>
+        <div id="task16Result"></div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NextLevelCourses</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
