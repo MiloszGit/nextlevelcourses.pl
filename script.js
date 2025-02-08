@@ -18,7 +18,25 @@ function changeLanguage() {
         
         course1Desc.textContent = 'Learn the basics of JavaScript, including variables, data types, and syntax.';
         course2Desc.textContent = 'Learn how to create and use functions in JavaScript.';
-    }
+    } else if (language === 'de') {
+        headerTitle.textContent = 'Willkommen zum Programmierkurs!';
+        headerDesc.textContent = 'Wählen Sie einen Kurs und lernen Sie das Programmieren mit interaktiven Aufgaben!';
+        
+        course1Desc.textContent = 'Lernen Sie die Grundlagen von JavaScript kennen, einschließlich Variablen, Datentypen und Syntax.';
+        course2Desc.textContent = 'Erfahren Sie, wie Sie Funktionen in JavaScript erstellen und verwenden.';     
+    }else if (language === 'jp') {
+        headerTitle.textContent = 'プログラミングコースへようこそ！';
+        headerDesc.textContent = 'コースを選んで、インタラクティブなタスクでプログラミングを学び始めましょう！';
+    
+        course1Desc.textContent = 'JavaScriptの基本、変数、データ型、構文を学びましょう。';
+        course2Desc.textContent = 'JavaScriptで関数を作成し、使用する方法を学びましょう。';     
+    } else if (language === 'cz') {
+        headerTitle.textContent = 'Vítejte v kurzu programování!';
+        headerDesc.textContent = 'Vyberte si kurz a začněte se učit programování s interaktivními úkoly!';
+        
+        course1Desc.textContent = 'Naučte se základy JavaScriptu, včetně proměnných, datových typů a syntaxe.';
+        course2Desc.textContent = 'Naučte se vytvářet a používat funkce v JavaScriptu.';
+}
 }
 
 // Function to show course details
