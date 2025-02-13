@@ -73,3 +73,71 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Styl selecta */
+.custom-select {
+    position: relative;
+    width: 260px;
+  }
+  
+  /* Styl selecta (przycisk wyboru) */
+  .custom-select select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  /* Efekt hover */
+  .custom-select select:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Efekt focus */
+  .custom-select select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Własna strzałka ▼ */
+  .custom-select::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 14px;
+    pointer-events: none;
+  }
+  
+  /* Styl opcji w rozwijanym menu */
+  .custom-select select option {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Styl dla wybranej opcji */
+  .custom-select select option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Wyśrodkowanie na stronie */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

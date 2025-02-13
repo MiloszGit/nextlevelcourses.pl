@@ -96,3 +96,185 @@ function checkTask2() {
         document.getElementById('task2Result').style.color = 'red';
     }
 }
+
+function checkTask3() {
+    const userCode = document.getElementById('task3Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task3Result').textContent = 'Task completed successfully!';
+        document.getElementById('task3Result').style.color = 'green';
+    } else {
+        document.getElementById('task3Result').textContent = 'Try again!';
+        document.getElementById('task3Result').style.color = 'red';
+    }
+}
+
+function checkTask4() {
+    const userCode = document.getElementById('task4Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task4Result').textContent = 'Task completed successfully!';
+        document.getElementById('task4Result').style.color = 'green';
+    } else {
+        document.getElementById('task4Result').textContent = 'Try again!';
+        document.getElementById('task4Result').style.color = 'red';
+    }
+}
+
+function checkTask5() {
+    const userCode = document.getElementById('task5Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task5Result').textContent = 'Task completed successfully!';
+        document.getElementById('task5Result').style.color = 'green';
+    } else {
+        document.getElementById('task5Result').textContent = 'Try again!';
+        document.getElementById('task5Result').style.color = 'red';
+    }
+}
+
+function checkTask6() {
+    const userCode = document.getElementById('task6Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task6Result').textContent = 'Task completed successfully!';
+        document.getElementById('task6Result').style.color = 'green';
+    } else {
+        document.getElementById('task6Result').textContent = 'Try again!';
+        document.getElementById('task6Result').style.color = 'red';
+    }
+}
+
+function checkTask7() {
+    const userCode = document.getElementById('task7Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task7Result').textContent = 'Task completed successfully!';
+        document.getElementById('task7Result').style.color = 'green';
+    } else {
+        document.getElementById('task7Result').textContent = 'Try again!';
+        document.getElementById('task7Result').style.color = 'red';
+    }
+}
+
+function checkTask8() {
+    const userCode = document.getElementById('task8Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task8Result').textContent = 'Task completed successfully!';
+        document.getElementById('task8Result').style.color = 'green';
+    } else {
+        document.getElementById('task8Result').textContent = 'Try again!';
+        document.getElementById('task8Result').style.color = 'red';
+    }
+}
+
+function checkTask9() {
+    const userCode = document.getElementById('task9Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task9Result').textContent = 'Task completed successfully!';
+        document.getElementById('task9Result').style.color = 'green';
+    } else {
+        document.getElementById('task9Result').textContent = 'Try again!';
+        document.getElementById('task9Result').style.color = 'red';
+    }
+}
+
+function checkTask10() {
+    const userCode = document.getElementById('task10Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task10Result').textContent = 'Task completed successfully!';
+        document.getElementById('task10Result').style.color = 'green';
+    } else {
+        document.getElementById('task10Result').textContent = 'Try again!';
+        document.getElementById('task10Result').style.color = 'red';
+    }
+}
+
+function checkTask11() {
+    const userCode = document.getElementById('task11Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task11Result').textContent = 'Task completed successfully!';
+        document.getElementById('task11Result').style.color = 'green';
+    } else {
+        document.getElementById('task11Result').textContent = 'Try again!';
+        document.getElementById('task11Result').style.color = 'red';
+    }
+}
+
+function checkTask12() {
+    const userCode = document.getElementById('task12Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task12Result').textContent = 'Task completed successfully!';
+        document.getElementById('task12Result').style.color = 'green';
+    } else {
+        document.getElementById('task12Result').textContent = 'Try again!';
+        document.getElementById('task12Result').style.color = 'red';
+    }
+}
+
+function checkTask13() {
+    const userCode = document.getElementById('task13Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task13Result').textContent = 'Task completed successfully!';
+        document.getElementById('task13Result').style.color = 'green';
+    } else {
+        document.getElementById('task13Result').textContent = 'Try again!';
+        document.getElementById('task13Result').style.color = 'red';
+    }
+}
+
+function checkTask14() {
+    const userCode = document.getElementById('task14Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task14Result').textContent = 'Task completed successfully!';
+        document.getElementById('task14Result').style.color = 'green';
+    } else {
+        document.getElementById('task14Result').textContent = 'Try again!';
+        document.getElementById('task14Result').style.color = 'red';
+    }
+}
+
+function checkTask15() {
+    const userCode = document.getElementById('task15Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task15Result').textContent = 'Task completed successfully!';
+        document.getElementById('task2Result').style.color = 'green';
+    } else {
+        document.getElementById('task15Result').textContent = 'Try again!';
+        document.getElementById('task15Result').style.color = 'red';
+    }
+}
+
+function checkTask16() {
+    const userCode = document.getElementById('task16Input').value.trim();
+    const correctCode = 'function add(a, b) { return a + b; }';
+    
+    if (userCode === correctCode) {
+        document.getElementById('task16Result').textContent = 'Task completed successfully!';
+        document.getElementById('task16Result').style.color = 'green';
+    } else {
+        document.getElementById('task16Result').textContent = 'Try again!';
+        document.getElementById('task16Result').style.color = 'red';
+    }
+}

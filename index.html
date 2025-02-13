@@ -11,9 +11,11 @@
 <body>
     
     <header>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
         <h1 id="headerTitle">Welcome to the Programming Course!</h1>
         <p id="headerDesc">Choose a course and start learning programming with interactive tasks!</p>
-        <div>
+        <div class="container">
+        <div class="custom-select">
             <label for="languageSelect">Change Language:</label>
             <select id="languageSelect" onchange="changeLanguage()">
                 <option value="en">Change Language</option>
@@ -22,9 +24,11 @@
                 <option value="de">German</option>
                 <option value="jp">Japanese</option>
                 <option value="cz">Czech</option>
-
             </select>
+            </div>
         </div>
+        <div class="container">
+        <div class="custom-select">
         <select id="courseSelect" onchange="showCourseDetails()">
             <option value="">Select a course</option>
             <option value="kurs1">Course 1: Introduction to JavaScript</option>
@@ -44,6 +48,8 @@
             <option value="kurs15">Course 15: Git and GitHub</option>
             <option value="kurs16">Course 16: Web APIs</option>
         </select>
+    </div>
+    </div>
     </header>
     
     <main>
@@ -289,7 +295,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 NextLevelCourses</p>
+        <p>&copy; 2025 NextLevelCourses Milosz Biniek. Wszystkie prawa zastrzeżone.</p>
+        <p>Kontakt: kontakt.dotnetzone@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>
